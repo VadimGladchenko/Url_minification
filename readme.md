@@ -8,4 +8,4 @@
 </p>
 
 
-This project use browscap, so you need to uncomment <b>browscap = extras\browscap.ini</b> in your php.ini files, download browscap.ini from <a href="https://browscap.org/">this link</a> and copy downloaded file into <b>php/extras/</b> folder.
+This project use browscap, so you need to uncomment <b>browscap = extras\browscap.ini</b> in your php.ini file, download browscap.ini from <a href="https://browscap.org/">this link</a> and copy downloaded file into <b>php/extras/</b> folder.
