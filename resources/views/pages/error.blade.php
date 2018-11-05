@@ -34,7 +34,7 @@
     </div>
 
     <div class="text-center" style="margin-top: 100px;">
-        <img class="" src="{{ asset('img/robot.svg') }}" width="200" height="200" alt="robot" style="fill: red;">
+        <img class="" src="{{ asset('img/robot.svg') }}" width="200" height="200" alt="robot">
     </div>
 </div>
 
