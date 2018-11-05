@@ -7,5 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-
-This project use browscap, so you need to uncomment <b>browscap = extras\browscap.ini</b> in your php.ini file, download browscap.ini from <a href="https://browscap.org/">this link</a> and copy downloaded file into <b>php/extras/</b> folder.
+Deploing:
+* This project use browscap, so you need to uncomment <b>browscap = extras\browscap.ini</b> in your php.ini file, download browscap.ini from <a href="https://browscap.org/">this link</a> and copy downloaded file into <b>php/extras/</b> folder.
+* composer install
+* create .env file
+* php artisan key:generate
+* configure database in your .env
+* php artisan migrate
+* php artisan serve
