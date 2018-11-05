@@ -30,7 +30,7 @@
             <h1 class="">{{$message}}</h1>
         </div>
 
-        <a href="/" class="btn btn-dark m-5">Return to main page</a>
+        <a href="/" class="btn btn-dark mt-5">Return to main page</a>
     </div>
 
     <div class="text-center" style="margin-top: 100px;">
