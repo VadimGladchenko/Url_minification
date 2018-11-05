@@ -30,6 +30,7 @@ class LinkService implements LinkServiceInterface
             $linkWithCurrentUrl = Url::where([
                 ['base_url', $baseUrl],
                 ['is_custom', false],
+                ['expired_date', null],
             ])->first();
 
             if (!empty($linkWithCurrentUrl)) {

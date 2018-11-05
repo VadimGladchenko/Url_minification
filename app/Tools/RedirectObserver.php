@@ -21,7 +21,7 @@ class RedirectObserver
 
         Transition::create([
             'url_id' => $url->id,
-            'browser' => get_browser($request->header('User-Agent'))->parent,
+            'browser' => get_browser($request->header('User-Agent'))->browser,
             'country' => $country,
             'operating_system' => DetectedOs::getOS($_SERVER['HTTP_USER_AGENT']),
         ]);

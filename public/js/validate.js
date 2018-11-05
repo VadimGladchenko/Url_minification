@@ -2,7 +2,7 @@ jQuery.validator.setDefaults({
     debug: false,
     success: "valid"
 });
-$( "#url_form" ).validate({
+$("#url_form").validate({
     rules: {
         base_url: {
             required: true,

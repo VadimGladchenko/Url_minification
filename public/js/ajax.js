@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('form').submit(function (event) {
         event.preventDefault();
 
-        if($(this).valid()) {
+        if ($(this).valid()) {
 
             var shortUrl = null;
             var expiredDate = null;
@@ -32,12 +32,12 @@ $(document).ready(function () {
                 dataType: 'json',
                 contentType: 'application/json',
                 success: function (data) {
-                    if(data.status === 'success') {
+                    if (data.status === 'success') {
                         $("#results_error_block").css("display", "none");
                         $("#results_info_block").css("display", "block");
                         $("#result_short_url").val(data.short_url);
                         $("#result_statistic_url").val(data.statistic_url);
-                    } else if(data.status === 'error') {
+                    } else if (data.status === 'error') {
                         $("#results_info_block").css("display", "none");
                         $("#results_error_block").css("display", "block");
                         $("#result_error").text(data.message);

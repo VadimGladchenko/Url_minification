@@ -5,7 +5,8 @@ namespace App\Tools;
 
 class StringGenerator
 {
-    public static function generate($length) {
+    public static function generate($length)
+    {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersCount = strlen($characters);
         $randomString = '';

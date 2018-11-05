@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'LinksController@index');
+Route::get('/', 'LinksController@index')->name('root');
 Route::post('/create_short_link', 'LinksController@createShortLink');
 Route::get('/statistic/{path}', 'LinksController@statistic');
 Route::get('{path}', 'LinksController@tryToRedirect');

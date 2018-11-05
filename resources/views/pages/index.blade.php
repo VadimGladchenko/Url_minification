@@ -29,18 +29,24 @@
             <label id="base_url-error" class="error mb-0 text-danger ml-1" for="base_url"></label>
 
             <div class="form-row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="custom-control form-control-lg custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="is_custom_link" name="is_custom_link"
                                onchange="document.getElementById('short_url').disabled = !this.checked; document.getElementById('short_url-error').textContent = '';">
                         <label class="custom-control-label noselect" for="is_custom_link">Custom</label>
                     </div>
-                    <input type="text" class="form-control" name="short_url" id="short_url"
-                           placeholder="Enter custom url" disabled>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">{{route('root')}}/</span>
+                        </div>
+                        <input type="text" class="form-control" name="short_url" id="short_url"
+                               aria-describedby="basic-addon3" disabled>
+                    </div>
                     <label id="short_url-error" class="error mb-0 text-danger ml-1" for="short_url"></label>
                 </div>
 
-                <div class="col-md-6 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="custom-control form-control-lg custom-checkbox">
                         <input type="checkbox" class="custom-control-input" name="is_expired_date" id="is_expired_date"
                                onchange="document.getElementById('expired_date').disabled = !this.checked;">

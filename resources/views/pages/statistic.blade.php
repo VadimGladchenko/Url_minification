@@ -88,10 +88,10 @@
 
 <div class="panel panel-default">
     <div class="panel-heading container mt-3 mb-5 pb-5">
-        <h2 class="panel-title d-inline-block">Transition statistic for: <span href="#" class="font-weight-bold"
-                                                                               id="base_url"></span></h2>
-        <h2 class="panel-title d-inline-block float-right">Transition count: <span href="#" class="font-weight-bold"
-                                                                                   id="trans_count"></span></h2>
+        <h2 class="panel-title d-inline-block">Transition statistic for:
+            <span href="#" class="font-weight-bold" id="base_url"></span></h2>
+        <h2 class="panel-title d-inline-block float-right">Transition count:
+            <span href="#" class="font-weight-bold" id="trans_count"></span></h2>
     </div>
     <div class="panel-body text-center">
         <div class="d-inline-block" style="width:500px; height:500px;">

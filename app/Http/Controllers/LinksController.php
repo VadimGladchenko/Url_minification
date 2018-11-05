@@ -34,7 +34,7 @@ class LinksController extends Controller
         try {
             return $this->linkService->createShortLink($request['base_url'], $request['short_url'], $request['expired_date']);
         } catch (LinkServiceException $e) {
-            if($e->getCode() == 200) {
+            if ($e->getCode() == 200) {
                 return ['status' => 'error',
                     'message' => $e->getMessage()];
             }
@@ -48,7 +48,7 @@ class LinksController extends Controller
         try {
             return $this->linkService->tryToRedirect($path);
         } catch (LinkServiceException $e) {
-            if($e->getCode() == 200) {
+            if ($e->getCode() == 200) {
                 return ['status' => 'error',
                     'message' => $e->getMessage()];
             }
@@ -64,7 +64,7 @@ class LinksController extends Controller
             $statistic = $this->linkService->getStatistic($path);
             return view('pages.statistic')->with('statistic', json_encode($statistic));
         } catch (LinkServiceException $e) {
-            if($e->getCode() == 200) {
+            if ($e->getCode() == 200) {
                 return ['status' => 'error',
                     'message' => $e->getMessage()];
             }
